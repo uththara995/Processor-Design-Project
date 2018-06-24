@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: io_manager.prj
 
@@ -108,29 +108,29 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\State_Machine.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\State_Machine.v" into library work
 Parsing module <State_Machine>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Register_32.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\Register_32.v" into library work
 Parsing module <Register_32>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\MUX_BUS.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\MUX_BUS.v" into library work
 Parsing module <MUX_BUS>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Counter_32.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\Counter_32.v" into library work
 Parsing module <Counter_32>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ALU_32.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\ALU_32.v" into library work
 Parsing module <ALU_32>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_tx.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_tx.v" into library work
 Parsing module <uart_tx>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_rx.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_rx.v" into library work
 Parsing module <uart_rx>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ipcore_dir\instruction_ram.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\ipcore_dir\instruction_ram.v" into library work
 Parsing module <instruction_ram>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ipcore_dir\data_ram.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\ipcore_dir\data_ram.v" into library work
 Parsing module <data_ram>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\CPU_Top.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\CPU_Top.v" into library work
 Parsing module <CPU_Top>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\clock_divider.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\clock_divider.v" into library work
 Parsing module <clock_divider>.
-Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\io_manager.v" into library work
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\io_manager.v" into library work
 Parsing module <io_manager>.
 
 =========================================================================
@@ -140,22 +140,22 @@ Parsing module <io_manager>.
 Elaborating module <io_manager>.
 
 Elaborating module <clock_divider>.
-WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\clock_divider.v" Line 36: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\clock_divider.v" Line 36: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 Elaborating module <data_ram>.
-WARNING:HDLCompiler:1499 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ipcore_dir\data_ram.v" Line 39: Empty module <data_ram> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\ipcore_dir\data_ram.v" Line 39: Empty module <data_ram> remains a black box.
 
 Elaborating module <uart_rx>.
-WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_rx.v" Line 85: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_rx.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_rx.v" Line 107: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_rx.v" Line 85: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_rx.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_rx.v" Line 107: Result of 15-bit expression is truncated to fit in 14-bit target.
 
 Elaborating module <uart_tx>.
-WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_tx.v" Line 84: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_tx.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_tx.v" Line 84: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_tx.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <instruction_ram>.
-WARNING:HDLCompiler:1499 - "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ipcore_dir\instruction_ram.v" Line 39: Empty module <instruction_ram> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\ipcore_dir\instruction_ram.v" Line 39: Empty module <instruction_ram> remains a black box.
 
 Elaborating module <CPU_Top>.
 
@@ -174,7 +174,7 @@ Elaborating module <MUX_BUS>.
 =========================================================================
 
 Synthesizing Unit <io_manager>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\io_manager.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\io_manager.v".
         RESET = 5'b00000
         RX_DONE = 5'b00001
         RX_WAIT1 = 5'b00010
@@ -218,7 +218,7 @@ Synthesizing Unit <io_manager>.
 Unit <io_manager> synthesized.
 
 Synthesizing Unit <clock_divider>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\clock_divider.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\clock_divider.v".
         DIV = 2
     Found 2-bit register for signal <counter>.
     Found 2-bit adder for signal <counter[1]_GND_2_o_add_1_OUT> created at line 36.
@@ -228,7 +228,7 @@ Synthesizing Unit <clock_divider>.
 Unit <clock_divider> synthesized.
 
 Synthesizing Unit <uart_rx>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_rx.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_rx.v".
     Found 14-bit register for signal <counter>.
     Found 1-bit register for signal <start_ok>.
     Found 1-bit register for signal <rx_done>.
@@ -258,7 +258,7 @@ Synthesizing Unit <uart_rx>.
 Unit <uart_rx> synthesized.
 
 Synthesizing Unit <uart_tx>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\uart_tx.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\uart_tx.v".
     Found 14-bit register for signal <bitTmr>.
     Found 4-bit register for signal <bitIndex>.
     Found 10-bit register for signal <txData>.
@@ -286,13 +286,13 @@ Synthesizing Unit <uart_tx>.
 Unit <uart_tx> synthesized.
 
 Synthesizing Unit <CPU_Top>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\CPU_Top.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\CPU_Top.v".
     Summary:
 	no macro.
 Unit <CPU_Top> synthesized.
 
 Synthesizing Unit <State_Machine>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\State_Machine.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\State_Machine.v".
         SEL_DRAM = 8'b00000000
         SEL_IRAM = 8'b00000001
         SEL_DI = 8'b00000010
@@ -373,6 +373,8 @@ Synthesizing Unit <State_Machine>.
         DIV161 = 32'b00000000000000000000000000101101
         JMPZ1 = 32'b00000000000000000000000000101110
         JMPZY1 = 32'b00000000000000000000000000101111
+        JMPZY2 = 32'b00000000000000000000000000110010
+        JMPZY3 = 32'b00000000000000000000000000110011
         JMPZN1 = 32'b00000000000000000000000000110000
         JMPNZ1 = 32'b00000000000000000000000000110001
     Found 32-bit register for signal <prev_state>.
@@ -407,18 +409,18 @@ WARNING:Xst:737 - Found 1-bit latch for signal <data_ram_we>. Latches may be gen
     Summary:
 	inferred  32 D-type flip-flop(s).
 	inferred  28 Latch(s).
-	inferred  66 Multiplexer(s).
+	inferred  68 Multiplexer(s).
 Unit <State_Machine> synthesized.
 
 Synthesizing Unit <Register_32>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Register_32.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\Register_32.v".
     Found 32-bit register for signal <buffer>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <Register_32> synthesized.
 
 Synthesizing Unit <Counter_32>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Counter_32.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\Counter_32.v".
     Found 32-bit register for signal <buffer>.
     Found 32-bit adder for signal <buffer[31]_GND_39_o_add_1_OUT> created at line 41.
     Summary:
@@ -428,7 +430,7 @@ Synthesizing Unit <Counter_32>.
 Unit <Counter_32> synthesized.
 
 Synthesizing Unit <ALU_32>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ALU_32.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\ALU_32.v".
         ALU_CLEAR = 8'b00000000
         ALU_INC = 8'b00000001
         ALU_DEC = 8'b00000010
@@ -449,7 +451,7 @@ Synthesizing Unit <ALU_32>.
 Unit <ALU_32> synthesized.
 
 Synthesizing Unit <MUX_BUS>.
-    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\MUX_BUS.v".
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design-Project\System_Design\MUX_BUS.v".
         SEL_DRAM = 8'b00000000
         SEL_IRAM = 8'b00000001
         SEL_DI = 8'b00000010
@@ -492,13 +494,13 @@ Macro Statistics
  1-bit latch                                           : 28
 # Comparators                                          : 1
  4-bit comparator greater                              : 1
-# Multiplexers                                         : 114
+# Multiplexers                                         : 116
  1-bit 10-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 16
  14-bit 2-to-1 multiplexer                             : 3
  16-bit 2-to-1 multiplexer                             : 4
  32-bit 13-to-1 multiplexer                            : 1
- 32-bit 2-to-1 multiplexer                             : 29
+ 32-bit 2-to-1 multiplexer                             : 31
  4-bit 2-to-1 multiplexer                              : 5
  8-bit 2-to-1 multiplexer                              : 44
  9-bit 2-to-1 multiplexer                              : 11
@@ -550,13 +552,13 @@ Macro Statistics
  Flip-Flops                                            : 403
 # Comparators                                          : 1
  4-bit comparator greater                              : 1
-# Multiplexers                                         : 124
+# Multiplexers                                         : 126
  1-bit 10-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 30
  14-bit 2-to-1 multiplexer                             : 2
  16-bit 2-to-1 multiplexer                             : 3
  32-bit 13-to-1 multiplexer                            : 1
- 32-bit 2-to-1 multiplexer                             : 28
+ 32-bit 2-to-1 multiplexer                             : 30
  4-bit 2-to-1 multiplexer                              : 4
  8-bit 2-to-1 multiplexer                              : 44
  9-bit 2-to-1 multiplexer                              : 11
@@ -608,14 +610,14 @@ Optimizing FSM <uart_tx_init/FSM_2> on signal <txState[1:2]> with sequential enc
  10    | 01
  11    | 10
 -------------------
-WARNING:Xst:1710 - FF/Latch <alu_sel_6> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alu_sel_5> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu_sel_7> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu_sel_5> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu_sel_6> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu_sel_4> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_sel_5> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_sel_7> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_sel_6> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_sel_4> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_sel_6> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_sel_5> (without init value) has a constant value of 0 in block <State_Machine>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <io_manager> ...
 
@@ -634,9 +636,6 @@ WARNING:Xst:1293 - FF/Latch <uart_tx_init/bitTmr_12> has a constant value of 0 i
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block io_manager, actual ratio is 3.
-FlipFlop cpu_enable has been replicated 1 time(s)
-FlipFlop instance_name/state_machine/prev_state_0 has been replicated 1 time(s)
-FlipFlop instance_name/state_machine/prev_state_4 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -644,8 +643,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 462
- Flip-Flops                                            : 462
+# Registers                                            : 459
+ Flip-Flops                                            : 459
 
 =========================================================================
 
@@ -668,25 +667,24 @@ Top Level Output File Name         : io_manager.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 954
+# BELS                             : 930
 #      GND                         : 3
 #      INV                         : 5
 #      LUT1                        : 39
 #      LUT2                        : 11
-#      LUT3                        : 143
-#      LUT4                        : 36
-#      LUT5                        : 158
-#      LUT6                        : 342
+#      LUT3                        : 117
+#      LUT4                        : 37
+#      LUT5                        : 166
+#      LUT6                        : 334
 #      MUXCY                       : 102
-#      MUXF7                       : 6
+#      MUXF7                       : 7
 #      VCC                         : 3
 #      XORCY                       : 106
-# FlipFlops/Latches                : 484
-#      FD                          : 33
-#      FD_1                        : 26
+# FlipFlops/Latches                : 481
+#      FD                          : 32
 #      FDE                         : 63
 #      FDR                         : 14
-#      FDR_1                       : 8
+#      FDR_1                       : 32
 #      FDRE                        : 320
 #      LD                          : 20
 # RAMS                             : 34
@@ -707,17 +705,17 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             484  out of  54576     0%  
- Number of Slice LUTs:                  736  out of  27288     2%  
-    Number used as Logic:               734  out of  27288     2%  
+ Number of Slice Registers:             481  out of  54576     0%  
+ Number of Slice LUTs:                  711  out of  27288     2%  
+    Number used as Logic:               709  out of  27288     2%  
     Number used as Memory:                2  out of   6408     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    936
-   Number with an unused Flip Flop:     452  out of    936    48%  
-   Number with an unused LUT:           200  out of    936    21%  
-   Number of fully used LUT-FF pairs:   284  out of    936    30%  
+ Number of LUT Flip Flop pairs used:    910
+   Number with an unused Flip Flop:     429  out of    910    47%  
+   Number with an unused LUT:           199  out of    910    21%  
+   Number of fully used LUT-FF pairs:   282  out of    910    30%  
    Number of unique control sets:        23
 
 IO Utilization: 
@@ -750,7 +748,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-clock_div/counter_1                | BUFG                                                                                                                              | 498   |
+clock_div/counter_1                | BUFG                                                                                                                              | 495   |
 clk                                | BUFGP                                                                                                                             | 2     |
 cpu_enable                         | BUFG                                                                                                                              | 20    |
 dram/N1                            | NONE(dram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram) | 32    |
@@ -766,8 +764,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.756ns (Maximum Frequency: 128.937MHz)
-   Minimum input arrival time before clock: 5.856ns
+   Minimum period: 8.212ns (Maximum Frequency: 121.777MHz)
+   Minimum input arrival time before clock: 6.102ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
@@ -777,27 +775,27 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_div/counter_1'
-  Clock period: 7.756ns (frequency: 128.937MHz)
-  Total number of paths / destination ports: 47188 / 1237
+  Clock period: 8.212ns (frequency: 121.777MHz)
+  Total number of paths / destination ports: 46182 / 1258
 -------------------------------------------------------------------------
-Delay:               3.878ns (Levels of Logic = 3)
+Delay:               4.106ns (Levels of Logic = 3)
   Source:            instance_name/ALU/buffer_1 (FF)
-  Destination:       instance_name/state_machine/prev_state_4 (FF)
+  Destination:       instance_name/state_machine/prev_state_2 (FF)
   Source Clock:      clock_div/counter_1 rising
   Destination Clock: clock_div/counter_1 falling
 
-  Data Path: instance_name/ALU/buffer_1 to instance_name/state_machine/prev_state_4
+  Data Path: instance_name/ALU/buffer_1 to instance_name/state_machine/prev_state_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             5   0.447   1.079  instance_name/ALU/buffer_1 (instance_name/ALU/buffer_1)
      LUT6:I0->O            1   0.203   0.924  instance_name/ALU/z<31>3 (instance_name/ALU/z<31>2)
-     LUT6:I1->O            5   0.203   0.715  instance_name/ALU/z<31>7 (instance_name/z)
-     LUT6:I5->O            2   0.205   0.000  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT24 (instance_name/state_machine/GND_8_o_next_state[31]_mux_2_OUT<0>)
-     FDR_1:D                   0.102          instance_name/state_machine/prev_state_0
+     LUT6:I1->O            5   0.203   0.943  instance_name/ALU/z<31>7 (instance_name/z)
+     LUT6:I3->O            1   0.205   0.000  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT275 (instance_name/state_machine/GND_8_o_next_state[31]_mux_2_OUT<2>)
+     FDR_1:D                   0.102          instance_name/state_machine/prev_state_2
     ----------------------------------------
-    Total                      3.878ns (1.160ns logic, 2.718ns route)
-                                       (29.9% logic, 70.1% route)
+    Total                      4.106ns (1.160ns logic, 2.946ns route)
+                                       (28.3% logic, 71.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
@@ -825,7 +823,7 @@ Delay:               1.950ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.730ns (Levels of Logic = 1)
+Offset:              3.728ns (Levels of Logic = 1)
   Source:            reset (PAD)
   Destination:       clock_div/counter_0 (FF)
   Destination Clock: clk rising
@@ -834,33 +832,34 @@ Offset:              3.730ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           384   1.222   2.078  reset_IBUF (reset_IBUF)
+     IBUF:I->O           360   1.222   2.076  reset_IBUF (reset_IBUF)
      FDR:R                     0.430          clock_div/counter_0
     ----------------------------------------
-    Total                      3.730ns (1.652ns logic, 2.078ns route)
+    Total                      3.728ns (1.652ns logic, 2.076ns route)
                                        (44.3% logic, 55.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_div/counter_1'
-  Total number of paths / destination ports: 420 / 387
+  Total number of paths / destination ports: 420 / 409
 -------------------------------------------------------------------------
-Offset:              5.856ns (Levels of Logic = 4)
+Offset:              6.102ns (Levels of Logic = 5)
   Source:            reset (PAD)
-  Destination:       instance_name/state_machine/prev_state_4 (FF)
+  Destination:       instance_name/state_machine/prev_state_1 (FF)
   Destination Clock: clock_div/counter_1 falling
 
-  Data Path: reset to instance_name/state_machine/prev_state_4
+  Data Path: reset to instance_name/state_machine/prev_state_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           384   1.222   2.443  reset_IBUF (reset_IBUF)
-     LUT6:I0->O            3   0.203   0.651  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT3011 (instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT301)
-     LUT6:I5->O            1   0.205   0.827  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT321_SW0 (N71)
-     LUT6:I2->O            2   0.203   0.000  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT322 (instance_name/state_machine/GND_8_o_next_state[31]_mux_2_OUT<4>)
-     FDR_1:D                   0.102          instance_name/state_machine/prev_state_4
+     IBUF:I->O           360   1.222   2.441  reset_IBUF (reset_IBUF)
+     LUT6:I0->O            3   0.203   1.015  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT154_SW0 (N49)
+     LUT6:I0->O            1   0.203   0.000  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT153_SW1_F (N203)
+     MUXF7:I0->O           1   0.131   0.580  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT153_SW1 (N86)
+     LUT6:I5->O            1   0.205   0.000  instance_name/state_machine/Mmux_GND_8_o_next_state[31]_mux_2_OUT155 (instance_name/state_machine/GND_8_o_next_state[31]_mux_2_OUT<1>)
+     FDR_1:D                   0.102          instance_name/state_machine/prev_state_1
     ----------------------------------------
-    Total                      5.856ns (1.935ns logic, 3.921ns route)
-                                       (33.0% logic, 67.0% route)
+    Total                      6.102ns (2.066ns logic, 4.036ns route)
+                                       (33.9% logic, 66.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_div/counter_1'
@@ -899,7 +898,7 @@ Clock to Setup on destination clock clock_div/counter_1
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clock_div/counter_1|    6.510|         |    7.506|         |
+clock_div/counter_1|    6.510|         |    7.682|         |
 cpu_enable         |         |    7.849|         |         |
 -------------------+---------+---------+---------+---------+
 
@@ -908,18 +907,18 @@ Clock to Setup on destination clock cpu_enable
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clock_div/counter_1|         |         |   10.888|         |
+clock_div/counter_1|         |         |   10.939|         |
 -------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.92 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.45 secs
  
 --> 
 
-Total memory usage is 4524240 kilobytes
+Total memory usage is 4525344 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   51 (   0 filtered)

@@ -119,7 +119,7 @@ module io_manager(
 	 
 	 // Instruction ram
 	 instruction_ram inst_ram (
-	  .clka(clk), // input clka
+	  .clka(clk_out), // input clka
 	  .wea(cpu_wea_inst_ram), // input [0 : 0] wea
 	  .addra(cpu_addra_inst_ram), // input [9 : 0] addra
 	  .dina(cpu_dina_inst_ram), // input [31 : 0] dina
@@ -144,7 +144,7 @@ module io_manager(
     ); 
 	 
 	initial begin
-		state <= CPU_WAIT;
+		state <= RESET;
 	end
 	 
 	always@(posedge clk_out)

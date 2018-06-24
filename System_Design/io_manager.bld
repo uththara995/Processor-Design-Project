@@ -6,8 +6,8 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc6slx45-csg324-3 io_manager.ngc io_manager.ngd
 
 Reading NGO file
-"C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/io_manager.ngc
-" ...
+"C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design/io_man
+ager.ngc" ...
 Loading design module "ipcore_dir/data_ram.ngc"...
 Loading design module "ipcore_dir/instruction_ram.ngc"...
 Gathering constraint information from source properties...
@@ -31,7 +31,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4434560 kilobytes
+Total memory usage is 4434528 kilobytes
 
 Writing NGD file "io_manager.ngd" ...
 Total REAL time to NGDBUILD completion:  4 sec

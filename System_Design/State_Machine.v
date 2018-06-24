@@ -169,6 +169,10 @@ module State_Machine(
 	
 	parameter JMPZY1 = 32'd47;
 	
+	parameter JMPZY2 = 32'd50;
+	
+	parameter JMPZY3 = 32'd51;
+	
 	parameter JMPZN1 = 32'd48;
 	
 	parameter JMPNZ1 = 32'd49;
@@ -710,12 +714,34 @@ module State_Machine(
 						next_state <= JMPZN1;
 				end
 				
-				JMPZY1: begin // PC <= IRAM[PC]
+				JMPZY1: begin // BUS <= IRAM[PC]
+					pc_inc <= 0;
+					finish <= 0;
+					alu_sel <= ALU_NOP;
+					bus_sel <= SEL_IRAM;
+					reg_sel <= REG_NO;
+					data_ram_we <= 0;
+					inst_ram_we <= 0;
+					next_state <= JMPZY2;
+				end
+				
+				JMPZY2: begin // PC <= BUS
 					pc_inc <= 0;
 					finish <= 0;
 					alu_sel <= ALU_NOP;
 					bus_sel <= SEL_IRAM;
 					reg_sel <= REG_PC;
+					data_ram_we <= 0;
+					inst_ram_we <= 0;
+					next_state <= JMPZY3;
+				end
+				
+				JMPZY3: begin // Wait for IRAM read
+					pc_inc <= 0;
+					finish <= 0;
+					alu_sel <= ALU_NOP;
+					bus_sel <= SEL_IRAM;
+					reg_sel <= REG_NO;
 					data_ram_we <= 0;
 					inst_ram_we <= 0;
 					next_state <= FETCH1;
