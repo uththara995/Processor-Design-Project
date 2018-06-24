@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj UART_TEST -o D:/verilog/UART_TEST/clock_divider.tfi -lib work D:/verilog/UART_TEST//clock_divider.v -module clock_divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

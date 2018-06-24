@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+State_Machine instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .z(z), 
+    .IR(IR), 
+    .pc_inc(pc_inc), 
+    .finish(finish), 
+    .data_ram_we(data_ram_we), 
+    .inst_ram_we(inst_ram_we), 
+    .alu_sel(alu_sel), 
+    .bus_sel(bus_sel), 
+    .reg_sel(reg_sel)
+    );
+
+

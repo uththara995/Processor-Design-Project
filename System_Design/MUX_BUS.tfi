@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+MUX_BUS instance_name (
+    .select(select), 
+    .data_ram(data_ram), 
+    .instruction_ram(instruction_ram), 
+    .DI(DI), 
+    .RI(RI), 
+    .BI(BI), 
+    .S(S), 
+    .C1(C1), 
+    .C2(C2), 
+    .AR(AR), 
+    .AC(AC), 
+    .BUS(BUS)
+    );
+
+

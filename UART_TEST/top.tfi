@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+top instance_name (
+    .clk(clk), 
+    .rx(rx), 
+    .reset(reset), 
+    .led(led)
+    );
+
+

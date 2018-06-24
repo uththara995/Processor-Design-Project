@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\verilog\UART_TEST\top.ncd
+OUTFILE=D:\verilog\UART_TEST\top.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=D:\verilog\UART_TEST
+LICENSE=WebPack
+USER_INFO=__0_0_0

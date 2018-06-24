@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj System_Design -o C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/Counter_32.tfi -lib work C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design//Counter_32.v -module Counter_32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

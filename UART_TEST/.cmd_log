@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj UART_TEST -o D:/verilog/UART_TEST/.tfi -lib work D:/verilog/UART_TEST//uart_rx.v -module "" -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

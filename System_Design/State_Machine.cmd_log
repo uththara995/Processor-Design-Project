@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj System_Design -o C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/State_Machine.tfi -lib work C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design//State_Machine.v -module State_Machine -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

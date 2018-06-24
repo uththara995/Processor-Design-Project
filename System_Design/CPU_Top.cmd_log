@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.syr" 
+vhdtdtfi -lang verilog -prj System_Design -o C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top.tfi -lib work C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design//CPU_Top.v -module CPU_Top -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

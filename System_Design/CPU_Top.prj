@@ -1,0 +1,6 @@
+verilog work "State_Machine.v"
+verilog work "Register_32.v"
+verilog work "MUX_BUS.v"
+verilog work "Counter_32.v"
+verilog work "ALU_32.v"
+verilog work "CPU_Top.v"

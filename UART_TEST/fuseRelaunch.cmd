@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/verilog/UART_TEST/clock_divider_test_isim_beh.exe" -prj "D:/verilog/UART_TEST/clock_divider_test_beh.prj" "work.clock_divider_test" "work.glbl" 

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+Register_32 instance_name (
+    .clk(clk), 
+    .din(din), 
+    .load(load), 
+    .reset(reset), 
+    .dout(dout)
+    );
+
+

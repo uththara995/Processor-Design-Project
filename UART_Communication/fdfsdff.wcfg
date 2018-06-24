@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/DilinDampahalage/Desktop/Processor-Design/UART_Communication/uart_rx_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uart_rx_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/uart_rx_test/RX_DONE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RX_DONE</obj_property>
+      <obj_property name="ObjectShortName">RX_DONE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_rx_test/RX_DATA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RX_DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RX_DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_rx_test/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_rx_test/RX" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RX</obj_property>
+      <obj_property name="ObjectShortName">RX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_rx_test/RESET" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+</wave_config>

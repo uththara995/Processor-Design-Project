@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DilinDampahalage\Desktop\Processor-Design\UART_Communication\io_manager.ncd
+OUTFILE=C:\Users\DilinDampahalage\Desktop\Processor-Design\UART_Communication\io_manager.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\DilinDampahalage\Desktop\Processor-Design\UART_Communication
+LICENSE=WebPack
+USER_INFO=__0_0_0

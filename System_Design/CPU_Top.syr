@@ -1,0 +1,1045 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: CPU_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : CPU_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\State_Machine.v" into library work
+Parsing module <State_Machine>.
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Register_32.v" into library work
+Parsing module <Register_32>.
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\MUX_BUS.v" into library work
+Parsing module <MUX_BUS>.
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Counter_32.v" into library work
+Parsing module <Counter_32>.
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ALU_32.v" into library work
+Parsing module <ALU_32>.
+Analyzing Verilog file "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\CPU_Top.v" into library work
+Parsing module <CPU_Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <CPU_Top>.
+
+Elaborating module <State_Machine>.
+
+Elaborating module <Register_32>.
+
+Elaborating module <Counter_32>.
+
+Elaborating module <ALU_32>.
+
+Elaborating module <MUX_BUS>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CPU_Top>.
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\CPU_Top.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CPU_Top> synthesized.
+
+Synthesizing Unit <State_Machine>.
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\State_Machine.v".
+        SEL_DRAM = 8'b00000000
+        SEL_IRAM = 8'b00000001
+        SEL_DI = 8'b00000010
+        SEL_RI = 8'b00000011
+        SEL_BI = 8'b00000100
+        SEL_S = 8'b00000101
+        SEL_C1 = 8'b00000110
+        SEL_C2 = 8'b00000111
+        SEL_AR = 8'b00001000
+        SEL_AC = 8'b00001001
+        SEL_PC = 8'b00001010
+        SEL_IR = 8'b00001011
+        ALU_CLEAR = 8'b00000000
+        ALU_INC = 8'b00000001
+        ALU_DEC = 8'b00000010
+        ALU_ADD = 8'b00000011
+        ALU_SUB = 8'b00000100
+        ALU_MUL2 = 8'b00000101
+        ALU_MUL4 = 8'b00000110
+        ALU_DIV16 = 8'b00000111
+        ALU_LOAD = 8'b00001000
+        ALU_NOP = 8'b00001001
+        REG_NO = 9'b000000000
+        REG_IR = 9'b000000001
+        REG_DI = 9'b000000010
+        REG_RI = 9'b000000100
+        REG_BI = 9'b000001000
+        REG_S = 9'b000010000
+        REG_C1 = 9'b000100000
+        REG_C2 = 9'b001000000
+        REG_AR = 9'b010000000
+        REG_PC = 9'b100000000
+        FETCH1 = 32'b00000000000000000000000000000000
+        FETCH2 = 32'b00000000000000000000000000000001
+        FETCH3 = 32'b00000000000000000000000000000010
+        FETCH4 = 32'b00000000000000000000000000000011
+        NOP1 = 32'b00000000000000000000000000000100
+WARNING:Xst:647 - Input <z> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <prev_state>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <State_Machine> synthesized.
+
+Synthesizing Unit <Register_32>.
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Register_32.v".
+    Found 32-bit register for signal <buffer>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Register_32> synthesized.
+
+Synthesizing Unit <Counter_32>.
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\Counter_32.v".
+    Found 32-bit register for signal <buffer>.
+    Found 32-bit adder for signal <buffer[31]_GND_4_o_add_1_OUT> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_32> synthesized.
+
+Synthesizing Unit <ALU_32>.
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\ALU_32.v".
+        ALU_CLEAR = 8'b00000000
+        ALU_INC = 8'b00000001
+        ALU_DEC = 8'b00000010
+        ALU_ADD = 8'b00000011
+        ALU_SUB = 8'b00000100
+        ALU_MUL2 = 8'b00000101
+        ALU_MUL4 = 8'b00000110
+        ALU_DIV16 = 8'b00000111
+        ALU_LOAD = 8'b00001000
+    Found 32-bit register for signal <buffer>.
+    Found 32-bit subtractor for signal <buffer[31]_B[31]_sub_9_OUT> created at line 59.
+    Found 32-bit adder for signal <buffer[31]_GND_5_o_add_4_OUT> created at line 53.
+    Found 32-bit adder for signal <buffer[31]_B[31]_add_6_OUT> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <ALU_32> synthesized.
+
+Synthesizing Unit <MUX_BUS>.
+    Related source file is "C:\Users\DilinDampahalage\Desktop\Processor-Design\System_Design\MUX_BUS.v".
+        SEL_DRAM = 8'b00000000
+        SEL_IRAM = 8'b00000001
+        SEL_DI = 8'b00000010
+        SEL_RI = 8'b00000011
+        SEL_BI = 8'b00000100
+        SEL_S = 8'b00000101
+        SEL_C1 = 8'b00000110
+        SEL_C2 = 8'b00000111
+        SEL_AR = 8'b00001000
+        SEL_AC = 8'b00001001
+        SEL_PC = 8'b00001010
+        SEL_IR = 8'b00001011
+    Found 32-bit 13-to-1 multiplexer for signal <_n0054> created at line 35.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <MUX_BUS> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 11
+ 32-bit register                                       : 11
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 1
+ 32-bit 13-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 17
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <C2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <C1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <AR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <RI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <DI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <S>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_0> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_1> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_2> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_3> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_4> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_5> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_6> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_7> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_8> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_9> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_10> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_11> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_12> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_13> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_14> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_15> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_16> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_17> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_18> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_19> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_20> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_21> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_22> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_23> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_24> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_25> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_26> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_27> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_28> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_29> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_30> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <buffer_31> has a constant value of 0 in block <BI>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Counter_32>.
+The following registers are absorbed into counter <buffer>: 1 register on signal <buffer>.
+Unit <Counter_32> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 320
+ Flip-Flops                                            : 320
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 1
+ 32-bit 13-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CPU_Top> ...
+
+Optimizing unit <State_Machine> ...
+
+Optimizing unit <ALU_32> ...
+WARNING:Xst:1293 - FF/Latch <RI/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RI/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BI/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALU/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DI/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C2/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AR/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <S/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_31> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_30> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_29> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_28> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_27> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_26> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_25> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_24> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_23> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_22> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_21> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_20> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_19> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_18> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_17> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_16> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_15> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_14> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_13> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_12> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_11> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_10> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_9> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_8> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_7> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_6> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_5> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_4> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_3> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_2> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_1> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C1/buffer_0> has a constant value of 0 in block <CPU_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <IR/buffer_31> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_30> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_29> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_28> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_27> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_26> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_25> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_24> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_23> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_22> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_21> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_20> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_19> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_18> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_17> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_16> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_15> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_14> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_13> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_12> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_11> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_10> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_9> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_8> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_7> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_6> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_5> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_4> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_3> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_2> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_1> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <IR/buffer_0> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_0> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_1> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_2> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_3> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_4> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_5> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_6> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_7> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_8> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_9> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_10> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_11> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_12> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_13> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_14> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_15> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_16> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_17> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_18> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_19> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_20> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_21> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_22> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_23> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_24> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_25> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_26> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_27> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_28> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_29> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_30> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <PC/buffer_31> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_31> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_30> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_29> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_28> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_27> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_26> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_25> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_24> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_23> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_22> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_21> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_20> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_19> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_18> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_17> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_16> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_15> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_14> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_13> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_12> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_11> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_10> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_9> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_8> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_7> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_6> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_5> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_4> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_3> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_2> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_1> of sequential type is unconnected in block <CPU_Top>.
+WARNING:Xst:2677 - Node <state_machine/prev_state_0> of sequential type is unconnected in block <CPU_Top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CPU_Top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CPU_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 101
+#      IBUF                        : 32
+#      OBUF                        : 69
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         112
+ Number of bonded IOBs:                 101  out of    218    46%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 4.409ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Delay:               4.409ns (Levels of Logic = 2)
+  Source:            dout_inst_ram<7> (PAD)
+  Destination:       din_data_ram<7> (PAD)
+
+  Data Path: dout_inst_ram<7> to din_data_ram<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  dout_inst_ram_7_IBUF (Mux_Bus/Mmux__n0054_629)
+     OBUF:I->O                 2.571          din_data_ram_7_OBUF (din_data_ram<7>)
+    ----------------------------------------
+    Total                      4.409ns (3.793ns logic, 0.616ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.03 secs
+ 
+--> 
+
+Total memory usage is 4523132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  609 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

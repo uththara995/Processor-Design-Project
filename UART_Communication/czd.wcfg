@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/DilinDampahalage/Desktop/Processor-Design/UART_Communication/io_manager_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="io_manager_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/io_manager_test/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/tx_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/c_BIT_PERIOD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c_BIT_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c_BIT_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/douta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/rx_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_done</obj_property>
+      <obj_property name="ObjectShortName">rx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/rx_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/tx_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/wea" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/tx_send" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_send</obj_property>
+      <obj_property name="ObjectShortName">tx_send</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/tx_buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_buffer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_buffer[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/led_buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led_buffer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_buffer[7:0]</obj_property>
+   </wvobject>
+</wave_config>

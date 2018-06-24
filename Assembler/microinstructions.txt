@@ -1,0 +1,95 @@
+parameter NOP1 = 32'd0;
+	
+	parameter FETCH1 = 32'd1;
+	parameter FETCH2 = 32'd2;
+	parameter FETCH3 = 32'd3;
+	parameter FETCH4 = 32'd4;
+	
+	parameter END1 = 32'd5;
+	
+	parameter LDAC1 = 32'd6;
+	parameter LDAC2 = 32'd7;
+	
+	parameter CLAC1 = 32'd8;
+	
+	parameter INCAC1 = 32'd9;
+	
+	parameter DECAC1 = 32'd10;
+	
+	parameter MVAC_DI1 = 32'd11;
+	
+	parameter MVAC_RI1 = 32'd12;
+	
+	parameter MVAC_BI1 = 32'd13;
+	
+	parameter MVAC_S1 = 32'd14;
+	
+	parameter MVAC_C11 = 32'd15;
+	
+	parameter MVAC_C21 = 32'd16;
+	
+	parameter MVAC_AR1 = 32'd17;
+	
+	parameter MVDI1 = 32'd18;
+	
+	parameter MVRI1 = 32'd19;
+	
+	parameter MVBI1 = 32'd20;
+	
+	parameter MVS1 = 32'd21;
+	
+	parameter MVC11 = 32'd22;
+	
+	parameter MVC21 = 32'd23;
+	
+	parameter MVAR1 = 32'd24;
+
+	parameter READ1 = 32'd25;
+	
+	parameter READ2 = 32'd26;
+	
+	parameter WRITE1 = 32'd27;
+	
+	parameter WRITE2 = 32'd28;
+	
+	parameter ADD_DI1 = 32'd29;
+	
+	parameter ADD_RI1 = 32'd30;
+	
+	parameter ADD_BI1 = 32'd31;
+	
+	parameter ADD_S1 = 32'd32;
+	
+	parameter ADD_C11 = 32'd33;
+	
+	parameter ADD_C21 = 32'd34;
+	
+	parameter ADD_AR1 = 32'd35;
+	
+	parameter SUB_DI1 = 32'd36;
+	
+	parameter SUB_RI1 = 32'd37;
+	
+	parameter SUB_BI1 = 32'd38;
+	
+	parameter SUB_S1 = 32'd39;
+	
+	parameter SUB_C11 = 32'd40;
+	
+	parameter SUB_C21 = 32'd41;
+	
+	parameter SUB_AR1 = 32'd42;
+
+	parameter MUL21 = 32'd43;
+	
+	parameter MUL41 = 32'd44;
+	
+	parameter DIV161 = 32'd45;
+	
+	parameter JMPZ1 = 32'd46;
+	
+	parameter JMPZY1 = 32'd47;
+	
+	parameter JMPZN1 = 32'd48;
+	
+	parameter JMPNZ1 = 32'd49;

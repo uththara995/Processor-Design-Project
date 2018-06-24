@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/io_manager_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="io_manager_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/io_manager_test/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/cpu_finish" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_finish</obj_property>
+      <obj_property name="ObjectShortName">cpu_finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/clk_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_out</obj_property>
+      <obj_property name="ObjectShortName">clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/addra_data_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra_data_ram[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_data_ram[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/dina_data_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina_data_ram[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina_data_ram[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/wea_data_ram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wea_data_ram</obj_property>
+      <obj_property name="ObjectShortName">wea_data_ram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/cpu_addra_inst_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_addra_inst_ram[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_addra_inst_ram[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/cpu_dina_inst_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_dina_inst_ram[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_dina_inst_ram[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/cpu_douta_inst_ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_douta_inst_ram[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_douta_inst_ram[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/cpu_wea_inst_ram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_wea_inst_ram</obj_property>
+      <obj_property name="ObjectShortName">cpu_wea_inst_ram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/pc_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc</obj_property>
+      <obj_property name="ObjectShortName">pc_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/inst_ram_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inst_ram_we</obj_property>
+      <obj_property name="ObjectShortName">inst_ram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/data_ram_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ram_we</obj_property>
+      <obj_property name="ObjectShortName">data_ram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/prev_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">prev_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/AC_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AC_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AC_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/AR_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AR_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AR_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/state_machine/z" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">z</obj_property>
+      <obj_property name="ObjectShortName">z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/C2_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">C2_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C2_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/C1_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">C1_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C1_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/S_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">S_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/DI_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DI_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DI_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/BI_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BI_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BI_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/RI_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RI_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RI_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/PC_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_manager_test/uut/instance_name/IR_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_OUT[31:0]</obj_property>
+   </wvobject>
+</wave_config>
