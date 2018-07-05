@@ -27,7 +27,7 @@ module clock_divider
     );
 //	 parameter SUB_DIV = DIV/2;
 	 reg [DIV/2:0] counter = 0;
-	 
+
 	 always@(posedge clk_in)
 	 begin
 		if(reset)

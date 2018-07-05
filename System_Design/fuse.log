@@ -44,9 +44,9 @@ Compiling module io_manager
 Compiling module io_manager_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 6 sub-compilation(s) to finish...
+Waiting for 8 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\io_manager_test_isim_beh.exe.sim\libPortability.dll".
 Compiled 24 Verilog Units
 Built simulation executable C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design/io_manager_test_isim_beh.exe
-Fuse Memory Usage: 33380 KB
-Fuse CPU Usage: 874 ms
+Fuse Memory Usage: 33400 KB
+Fuse CPU Usage: 734 ms

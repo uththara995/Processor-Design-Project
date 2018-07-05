@@ -62,3 +62,9 @@ map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off io_manager_map.ncd io_manager.ncd io_manager.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml io_manager.twx io_manager.ncd -o io_manager.twr io_manager.pcf -ucf io_manager.ucf 
 bitgen -intstyle ise -f io_manager.ut io_manager.ncd 
+xst -intstyle ise -ifn "C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design/io_manager.xst" -ofn "C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design/io_manager.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc io_manager.ucf -p xc6slx45-csg324-3 io_manager.ngc io_manager.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o io_manager_map.ncd io_manager.ngd io_manager.pcf 
+par -w -intstyle ise -ol high -mt off io_manager_map.ncd io_manager.ncd io_manager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml io_manager.twx io_manager.ncd -o io_manager.twr io_manager.pcf -ucf io_manager.ucf 
+bitgen -intstyle ise -f io_manager.ut io_manager.ncd 

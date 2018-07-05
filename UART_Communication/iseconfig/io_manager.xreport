@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-06-23T14:57:43</DateModified>
+  <DateModified>2018-07-02T22:43:10</DateModified>
   <ModuleName>io_manager</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/DilinDampahalage/Desktop/Processor-Design/UART_Communication/iseconfig/io_manager.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/DilinDampahalage/Desktop/Processor-Design/UART_Communication\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/UART_Communication/iseconfig/io_manager.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/UART_Communication\</ImplementationReportsDirectory>
   <DateInitialized>2018-05-27T22:46:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

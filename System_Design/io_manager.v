@@ -128,7 +128,7 @@ module io_manager(
 	 
 	 
 	 // CPU
-	CPU_Top instance_name (
+	CPU_Top cpu (
     .clk(clk_out), 
     .enable(cpu_enable), 
     .reset(reset), 

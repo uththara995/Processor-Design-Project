@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/test/pc_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc</obj_property>
+      <obj_property name="ObjectShortName">pc_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/finish" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">finish</obj_property>
+      <obj_property name="ObjectShortName">finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/data_ram_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ram_we</obj_property>
+      <obj_property name="ObjectShortName">data_ram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/inst_ram_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inst_ram_we</obj_property>
+      <obj_property name="ObjectShortName">inst_ram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/alu_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_sel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_sel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/bus_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_sel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_sel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/reg_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_sel[8:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_sel[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/z" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">z</obj_property>
+      <obj_property name="ObjectShortName">z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/prev_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">prev_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_state[31:0]</obj_property>
+   </wvobject>
+</wave_config>

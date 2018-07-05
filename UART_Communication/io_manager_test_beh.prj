@@ -1,7 +1,0 @@
-verilog work "uart_tx.v"
-verilog work "uart_rx.v"
-verilog work "ipcore_dir/data_ram.v"
-verilog work "clock_divider.v"
-verilog work "io_manager.v"
-verilog work "io_manager_test.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

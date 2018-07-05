@@ -22,6 +22,3 @@ Block Memory Generator CORE Generator module io_manager_test.uut.dram.inst.\nati
 Block Memory Generator CORE Generator module io_manager_test.uut.inst_ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
 Finished circuit initialization process.
 # run 10ms
-# run 50ms
-# run 50ms
-# run 100ms
