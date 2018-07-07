@@ -22,11 +22,9 @@ def loadMicroinstructions(microinstructionFile):
                 opcodes[opcode] = numToBinary(int(tokens[1]))
     return opcodes
 
-
-def processAssembly(assemblyFile, opcodes):
-    assemblyLines = []
+def getLabels(assemblyFile):
+    labels = {}
     with open(assemblyFile,'r') as f:
-        labels = {}
         lineNo = 0
         for line in f:
             line = line.replace('\t','')
@@ -36,6 +34,20 @@ def processAssembly(assemblyFile, opcodes):
             codeLine = ''
             if len(tokens) > 1:
                 labels[tokens[0]] = numToBinary(lineNo)
+            lineNo = lineNo + 1
+    return labels
+
+def processAssembly(assemblyFile, opcodes, labels):
+    assemblyLines = []
+    with open(assemblyFile,'r') as f:
+        lineNo = 0
+        for line in f:
+            line = line.replace('\t','')
+            line = line.replace('\n','')
+            line = line.replace(' ','')
+            tokens = line.split(':')
+            codeLine = ''
+            if len(tokens) > 1:
                 codeLine = tokens[1]
             elif len(tokens) == 1:
                 codeLine = tokens[0]
@@ -49,7 +61,7 @@ def processAssembly(assemblyFile, opcodes):
             elif finalToken in labels:
                 assemblyLines.append(labels[finalToken])
                 lineNo = lineNo + 1
-            elif finalToken.isnumeric():
+            elif finalToken.isdigit():
                 assemblyLines.append(numToBinary(int(finalToken)))
                 lineNo = lineNo + 1
     return assemblyLines
@@ -83,5 +95,6 @@ def generateCoe(coeFile,assemblyLines):
 
 if __name__ == '__main__':
     opcodes = loadMicroinstructions('microinstructions.txt')
-    assemblyLines = processAssembly('code.txt',opcodes)
+    labels = getLabels('code.txt')
+    assemblyLines = processAssembly('code.txt',opcodes,labels)
     generateCoe('code.coe',assemblyLines)
