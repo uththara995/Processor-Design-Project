@@ -6,7 +6,7 @@
 //
 // Create Date:   06:20:18 06/23/2018
 // Design Name:   io_manager
-// Module Name:   C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/io_manager_test.v
+// Module Name:   E:Processor-Design-Project/System_Design/io_manager_test.v
 // Project Name:  System_Design
 // Target Device:  
 // Tool versions:  

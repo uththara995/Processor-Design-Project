@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-06-24T11:53:40</DateModified>
+  <DateModified>2018-07-07T13:23:03</DateModified>
   <ModuleName>io_manager</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design/iseconfig/io_manager.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/DilinDampahalage/Desktop/Processor-Design-Project/System_Design</ImplementationReportsDirectory>
+  <SavedFilePath>E:/Processor-Design-Project/System_Design/iseconfig/io_manager.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/Processor-Design-Project/System_Design\</ImplementationReportsDirectory>
   <DateInitialized>2018-06-24T08:53:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

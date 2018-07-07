@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+E:\xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml io_manager.twx io_manager.ncd -o io_manager.twr
 io_manager.pcf -ucf io_manager.ucf
 
@@ -37,7 +37,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-reset       |    3.762(R)|      SLOW  |   -2.299(R)|      FAST  |clk_BUFGP         |   0.000|
+reset       |    4.271(R)|      SLOW  |   -2.667(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -49,14 +49,14 @@ clk            |    1.230|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Jun 24 11:55:34 2018 
+Analysis completed Sat Jul 07 13:44:21 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4643 MB
+Peak Memory Usage: 305 MB
 
 
 

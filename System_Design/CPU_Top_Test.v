@@ -6,7 +6,7 @@
 //
 // Create Date:   20:49:16 06/18/2018
 // Design Name:   CPU_Top
-// Module Name:   C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/CPU_Top_Test.v
+// Module Name:   E:Processor-Design-Project/System_Design/CPU_Top_Test.v
 // Project Name:  System_Design
 // Target Device:  
 // Tool versions:  

@@ -689,16 +689,16 @@ module State_Machine(
 					next_state <= FETCH1;
 				end
 				
-				MUL21: begin // AC <= AC * 2
-					pc_inc <= 0;
-					finish <= 0;
-					alu_sel <= ALU_MUL2;
-					bus_sel <= SEL_IRAM;
-					reg_sel <= REG_NO;
-					data_ram_we <= 0;
-					inst_ram_we <= 0;
-					next_state <= FETCH1;
-				end
+//				MUL21: begin // AC <= AC * 2
+//					pc_inc <= 0;
+//					finish <= 0;
+//					alu_sel <= ALU_MUL2;
+//					bus_sel <= SEL_IRAM;
+//					reg_sel <= REG_NO;
+//					data_ram_we <= 0;
+//					inst_ram_we <= 0;
+//					next_state <= FETCH1;
+//				end
 				
 				JMPZ1: begin // PC <= PC + 1
 					pc_inc <= 1;

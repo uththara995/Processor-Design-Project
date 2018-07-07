@@ -1,7 +1,7 @@
 clear all;
 close all;
 
-I = imread('lena_256x256.png');
+I = imread('us.jpg');
 I = uint8(rgb2gray(I));
 
 % I = uint8(0:255);
@@ -15,7 +15,7 @@ N = 256;
 I = reshape(I,N^2,1);
 
 
-s = serial('COM5');
+s = serial('COM6');
 set(s,'BaudRate',9600);
 s.InputBufferSize = N^2;
 s.OutputBufferSize = N^2;
@@ -47,11 +47,14 @@ while i < (N^2 + 1)
     end
 end
 
+display('Downsampled image received from FPGA');
+
 fclose(s);
 delete(s)
 clear s
-
-J = uint8(reshape(J,N,N));
+%%
+M = 127;
+Q = uint8(reshape(J(1:M*M),M,M));
 figure;
-imshow(J);
+imshow(Q);
 title('output image');

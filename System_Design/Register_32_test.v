@@ -6,7 +6,7 @@
 //
 // Create Date:   08:00:26 06/16/2018
 // Design Name:   Register_32
-// Module Name:   C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/Register_32_test.v
+// Module Name:   E:Processor-Design-Project/System_Design/Register_32_test.v
 // Project Name:  System_Design
 // Target Device:  
 // Tool versions:  

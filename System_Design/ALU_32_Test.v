@@ -6,7 +6,7 @@
 //
 // Create Date:   09:02:45 06/16/2018
 // Design Name:   ALU_32
-// Module Name:   C:/Users/DilinDampahalage/Desktop/Processor-Design/System_Design/ALU_32_Test.v
+// Module Name:   E:Processor-Design-Project/System_Design/ALU_32_Test.v
 // Project Name:  System_Design
 // Target Device:  
 // Tool versions:  
